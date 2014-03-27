@@ -1,0 +1,19 @@
+{
+  "name": "highlightjs-element",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#master",
+    "highlightjs": "*"
+  },
+  "homepage": "https://github.com/PolymerLabs/highlightjs-element",
+  "_release": "c6610aada3",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c6610aada3684db9c68bd325530cdfd03d00cdc6"
+  },
+  "_source": "git://github.com/PolymerLabs/highlightjs-element.git",
+  "_target": "master",
+  "_originalSource": "PolymerLabs/highlightjs-element",
+  "_direct": true
+}
