@@ -1,0 +1,42 @@
+<link rel="import" href="highlightjs-import.html">
+
+<polymer-element name="highlightjs-element" attributes="text">
+
+  <template>
+
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+
+    <link href="../highlightjs/styles/default.css" rel="stylesheet" />
+    <link href="../highlightjs/styles/atelier-forest.light.css" rel="stylesheet" />
+
+    <pre id="content"></pre>
+
+  </template>
+
+  <script>
+
+    Polymer('highlightjs-element', {
+
+      ready: function() {
+        if (!this.text) {
+          if (this.firstElementChild && this.firstElementChild.localName === 'template') {
+            this.text = this.firstElementChild.innerHTML;
+          } else {
+            this.text = this.innerHTML;
+          }
+        }
+      },
+
+      textChanged: function() {
+        this.$.content.innerHTML = hljs.highlightAuto(this.text || '').value;
+      }
+
+    });
+
+  </script>
+
+</polymer-element>
