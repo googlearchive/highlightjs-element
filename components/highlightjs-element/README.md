@@ -1,10 +1,10 @@
-hilightjs-element
-=================
+highlightjs-element
+===================
 
 See the [component page](http://polymerlabs.github.io/highlightjs-element) for more information.
 
-hilightjs-import
-================
+highlightjs-import
+==================
 
 Import files are a new invention, so libraries like [`highlightjs`](http://highlightjs.org) do not yet provide them.
 
