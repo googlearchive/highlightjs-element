@@ -6,11 +6,11 @@
     "highlightjs": "*"
   },
   "homepage": "https://github.com/PolymerLabs/highlightjs-element",
-  "_release": "59dbea9f69",
+  "_release": "74d4796df8",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "59dbea9f6937d8f8709a543050eef5be6f12cc7d"
+    "commit": "74d4796df861c1d000514b5b91af6bddcbe2c740"
   },
   "_source": "git://github.com/PolymerLabs/highlightjs-element.git",
   "_target": "master",
