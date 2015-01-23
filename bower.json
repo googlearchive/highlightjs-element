@@ -2,7 +2,8 @@
   "name": "highlightjs-element",
   "private": true,
   "dependencies": {
-    "polymer": "Polymer/polymer#master",
+    "polymer": "Polymer/polymer#^0.5",
     "highlightjs": "*"
-  }
+  },
+  "version": "0.5.4"
 }
