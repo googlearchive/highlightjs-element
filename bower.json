@@ -1,8 +1,32 @@
 {
   "name": "highlightjs-element",
   "private": true,
+  "version": "1.0.0",
+  "license": "https://polymer.github.io/LICENSE.txt",
+  "description": "An element wrapping the highlight js library",
+  "main": "highlightjs-.html",
+  "author": [
+    "The Polymer Authors"
+  ],
+  "keywords": [
+    "web-components",
+    "polymer",
+    "highlightjs",
+    "code",
+    "syntax"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Polymer/highlightjs-element.git"
+  },
   "dependencies": {
-    "polymer": "Polymer/polymer#master",
+    "polymer": "Polymer/polymer#^1.0.0",
     "highlightjs": "*"
+  },
+  "devDependencies": {
+    "test-fixture": "PolymerElements/test-fixture#^1.0.0",
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "*",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.11"
   }
 }
