@@ -1,15 +1,26 @@
 highlightjs-element
 ===================
 
-See the [component page](http://polymer.github.io/highlightjs-element/components/highlightjs-element/) for more information.
+Element wrapper for the `highlightjs` (http://highlightjs.org/) library.
 
-highlightjs-import
-==================
+##### Example
 
-Import files are a new invention, so libraries like [`highlightjs`](http://highlightjs.org) do not yet provide them.
+    <highlightjs-element text="def somefunc(param1='', param2=0):"></highlightjs-element>
 
-`highlightjs-import` is an intermediary that provides an import file for the `highlightjs` component.
-`highlightjs-import` depends on `highlightjs`.
+##### Example
 
-Components that want to use `highlightjs` should depend on `highlightjs-element` and import `highlightjs-import` to be safe from library duplication.
-Such components need not use Polymer or `highlightjs-element`, but we put the import and the element in one package for convenience.
+    <highlightjs-element>
+      <template>
+
+        <link rel="import" href="/components/polymer/polymer.html">
+        <dom-module name="my-element">
+          <template>
+            <span>I'm <b>my-element</b>. Check out my prototype.</span>
+          </template>
+          <script>
+            Polymer({is: 'my-element'});
+          </script>
+        </dom-module>
+
+      </template>
+    </highlightjs-element>
