@@ -48,7 +48,7 @@ Element wrapper for the `highlightjs` (http://highlightjs.org/) library.
   <template>
     <style include="sunburst-theme"></style>
     <style>:host { display: block; }</style>
-    <pre class="hljs"><code id="content"></code></pre>
+    <pre><code id="content" class="hljs"></code></pre>
   </template>
   <script>
     Polymer({
@@ -71,6 +71,10 @@ Element wrapper for the `highlightjs` (http://highlightjs.org/) library.
       },
 
       ready: function() {
+        // Ensures proper local DOM CSS scoping for elements created by
+        // higlight JS. Needed because it doesn't know about Polymer.dom();
+        this.scopeSubtree(this.$.content, true);
+
         if (!this.text) {
           if (Polymer.dom(this).firstElementChild &&
               Polymer.dom(this).firstElementChild.localName === 'template') {
